@@ -1,0 +1,20 @@
+{
+    "tarifs": [
+      {
+        "tarif_name": "Adult",
+        "fare_per_zone": 2105
+      },
+      {
+        "tarif_name": "Child",
+        "fare_per_zone": 1410
+      },
+      {
+        "tarif_name": "Senior",
+        "fare_per_zone": 1025
+      },
+      {
+        "tarif_name": "Student",
+        "fare_per_zone": 1750
+      }
+    ]
+  }

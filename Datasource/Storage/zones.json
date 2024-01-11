@@ -1,0 +1,45 @@
+{
+    "zones": [
+      {
+        "zone_name": "Central",
+        "order": 1,
+        "stations": [
+          "Yaen",
+          "Rede",
+          "Bylyn",
+          "Frestin",
+          "Soth",
+          "Lomil",
+          "Ninia",
+          "Tallan",
+          "Jaurid"
+        ]
+      },
+      {
+        "zone_name": "Midtown",
+        "order": 2,
+        "stations": [
+          "Quithiel",
+          "Riclya",
+          "Agralle",
+          "Docia",
+          "Stonyam",
+          "Obelyn",
+          "Ralith"
+        ]
+      },
+      {
+        "zone_name": "Downtown",
+        "order": 3,
+        "stations": [
+          "Erean",
+          "Brunad",
+          "Zord",
+          "Perinad",
+          "Keivia",
+          "Elyot",
+          "Adohad"
+        ]
+      }
+    ]
+  }

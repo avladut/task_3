@@ -6,9 +6,12 @@ class Zone:
         try:
             self.name = dict["zone_name"]
             self.order = dict["order"]
-            self.stations = []
+            
+            stations_from_dictionary = []
             for stationName in dict["stations"]:
-                self.stations.append[Station(stationName)]
-        except:
-            print("something went wrong initialising a Zone with args: " + dict)    
+                newStation = Station(stationName)
+                stations_from_dictionary.append(newStation)
+            self.stations = stations_from_dictionary
+        except Exception as err:
+            print(f'something went wrong initialising a Zone with args: {dict} and error: {err}')
         

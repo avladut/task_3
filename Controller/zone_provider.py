@@ -7,21 +7,22 @@ class ZoneProvider:
 
     def get_zones_and_stations(self):
         try:
-            f = open(self.file_name)
-            data = json.load(f)
+            with open(r'Datasource/Storage/zones.json') as f:
+                data = json.load(f) 
 
-        except:
-            print("error opening file or loading json")
+        except Exception as err:
+            print("error opening file or loading json" + err)
 
         try:
             zones = []
+            print (f'data is {data}')
             zone_list = data["zones"]
             for zone in zone_list:
                 zone_model = Zone(zone)
                 if zone_model != None:
                     zones.append(zone_model)
             return zone_list        
-        except:
-            print("error parsing json data")      
+        except Exception as err2:
+            print(err2)
 
-        f.close()      
+             
